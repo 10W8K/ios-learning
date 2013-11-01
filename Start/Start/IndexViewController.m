@@ -7,6 +7,7 @@
 //
 
 #import "IndexViewController.h"
+#import "ListViewController.h"
 
 @interface IndexViewController ()
 
@@ -29,7 +30,7 @@
     contentView.backgroundColor = [UIColor lightGrayColor];
     self.view = contentView;
     //创建label控件并作为subview添加到view
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0.0, 0.0, 320, 30)];
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, 30.0, 320, 30)];
     label.text = @"PureCode";
     label.center = contentView.center;
     label.backgroundColor = [UIColor lightGrayColor];
@@ -37,7 +38,7 @@
     [self.view addSubview:label];
     //创建button控件并作为subview添加到view
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setFrame:CGRectMake(10.0, 20.0, 77, 37)];
+    [button setFrame:CGRectMake(50.0, 80.0, 77, 37)];
     [button setTitle:@"Button" forState:UIControlStateNormal];
     //事件绑定:buttonPressed
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -46,12 +47,18 @@
 
 - (void)buttonPressed:(id)sender
 {
+    /**
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"ButtonPressed"
                                                    message:@"You have pressed the button"
                                                   delegate:nil
                                          cancelButtonTitle:@"cancel"
                                          otherButtonTitles:nil];
     [alert show];
+     */
+    
+    ListViewController *listViewController = [[ListViewController alloc]init];
+    [self.navigationController pushViewController:listViewController animated:true];
+     
 }
 
 
