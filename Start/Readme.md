@@ -1,15 +1,19 @@
-Start
+Start IOS开发学习中
 
 ---
 
-IOS开发学习中
+- 创建了一个Empty Project,
 
-第一个app，本例创建了一个Empty Project,
+- 添加了ViewController，AppDelegate内配置rootViewController
 
-在此基础上添加了ViewController，AppDelegate内配置rootViewController
+- 添加了两个基础控件：button和label
 
-代码添加了两个基础控件：button和label
+- 为button绑定了事件，点击弹出AlertView
 
-为button绑定了事件，点击弹出AlertView
+---
+
+- 添加UINavigationController设置initWithRootViewController为indexView
+
+- buttonPressed事件暂时绑定为pushViewController:listViewController
 
 ---
