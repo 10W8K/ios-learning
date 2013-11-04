@@ -17,3 +17,5 @@ Start IOS开发学习中
 - buttonPressed事件暂时绑定为pushViewController:listViewController
 
 ---
+
+- 创建Student模型类, 并在ViewController中进行调用
