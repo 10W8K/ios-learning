@@ -9,6 +9,8 @@
 #import "IndexViewController.h"
 #import "ListViewController.h"
 
+#import "Students.h"
+
 @interface IndexViewController ()
 
 @end
@@ -43,6 +45,11 @@
     //事件绑定:buttonPressed
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    //Students *student = [Students studentRealName:@"Alex" andLastName:@"Yan"];
+    Students *student = [[Students alloc]init];
+    NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
+
 }
 
 - (void)buttonPressed:(id)sender

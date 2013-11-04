@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1D6FF818248DC40056209C /* Students.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D6FF718248DC40056209C /* Students.m */; };
+		FAD215211826028D0020F889 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD215201826028D0020F889 /* Circle.m */; };
 		FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF99B3A182330D700ABB21B /* ListViewController.m */; };
 		FAFFA3E81822A38D009CB36D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E71822A38D009CB36D /* Foundation.framework */; };
 		FAFFA3EA1822A38D009CB36D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1D6FF618248DC40056209C /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
+		FA1D6FF718248DC40056209C /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
+		FAD2151F1826028D0020F889 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		FAD215201826028D0020F889 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		FAF99B39182330D700ABB21B /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		FAF99B3A182330D700ABB21B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		FAFFA3E41822A38D009CB36D /* Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1D6FF5182483350056209C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D6FF618248DC40056209C /* Students.h */,
+				FA1D6FF718248DC40056209C /* Students.m */,
+				FAD2151F1826028D0020F889 /* Circle.h */,
+				FAD215201826028D0020F889 /* Circle.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FAFFA3DB1822A38D009CB36D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +130,7 @@
 		FAFFA3ED1822A38D009CB36D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D6FF5182483350056209C /* Model */,
 				FAFFA4161822A601009CB36D /* View Controllers */,
 				FAFFA3F61822A38D009CB36D /* AppDelegate.h */,
 				FAFFA3F71822A38D009CB36D /* AppDelegate.m */,
@@ -258,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFFA3F81822A38D009CB36D /* AppDelegate.m in Sources */,
+				FA1D6FF818248DC40056209C /* Students.m in Sources */,
 				FAFFA3F41822A38D009CB36D /* main.m in Sources */,
+				FAD215211826028D0020F889 /* Circle.m in Sources */,
 				FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */,
 				FAFFA41F1822B1AD009CB36D /* IndexViewController.m in Sources */,
 			);

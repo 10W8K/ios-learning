@@ -6,8 +6,11 @@
 //  Copyright (c) 2013年 想当当. All rights reserved.
 //
 
+#import "Students.h"
 #import <UIKit/UIKit.h>
 
 @interface IndexViewController : UIViewController
+
+@property (strong, nonatomic)Students *student;
 
 @end
