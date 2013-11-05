@@ -8,7 +8,7 @@
 
 #import "IndexViewController.h"
 #import "ListViewController.h"
-
+#import "UIColor+Hex.h"
 #import "Students.h"
 
 @interface IndexViewController ()
@@ -30,7 +30,9 @@
     //创建view
     UIView *contentView = [[UIView alloc]initWithFrame: [[UIScreen mainScreen] applicationFrame]];
     //contentView.backgroundColor = [UIColor lightGrayColor];
+    contentView.backgroundColor = [UIColor colorWithHex:0xF3F3F3 alpha:1];
     self.view = contentView;
+
     //创建label控件并作为subview添加到view
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, 30.0, 320, 30)];
     label.text = @"PureCode";
