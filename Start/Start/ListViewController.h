@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController
+@interface ListViewController : UITableViewController
+//@interface ListViewController : UIViewController
 
 @property (strong, nonatomic)NSArray *dataList;
 
 @property (strong, nonatomic)NSArray *list;
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView1;
 
 @property (strong, nonatomic)UITableViewCell *tableViewCell;
 

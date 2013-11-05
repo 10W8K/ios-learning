@@ -50,14 +50,13 @@
 	// Do any additional setup after loading the view.
     
     self.list = [NSArray arrayWithObjects:@"武汉",@"上海",@"北京",@"深圳",@"广州",@"重庆",@"香港",@"台海",@"天津", nil];
-    self.dataList = self.list;
-    
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
-    
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    //self.dataList = self.list;
+    //self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+    //self.tableView = [[UITableView alloc]init];
+    //self.tableView.dataSource = self;
+    //self.tableView.delegate = self;
     //self.myTableView = tableView;
-    [self.view addSubview:self.tableView];
+    //[self.view addSubview:self.tableView];
     
 }
 
@@ -68,7 +67,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"GOOO");
+    //NSLog(@"GOOO");
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
