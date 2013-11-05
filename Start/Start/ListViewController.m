@@ -58,6 +58,8 @@
     //self.myTableView = tableView;
     //[self.view addSubview:self.tableView];
     
+    self.navigationItem.title = @"列表";
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -32,14 +32,55 @@
     //contentView.backgroundColor = [UIColor lightGrayColor];
     contentView.backgroundColor = [UIColor colorWithHex:0xF3F3F3 alpha:1];
     self.view = contentView;
+    
 
     //创建label控件并作为subview添加到view
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, 30.0, 320, 30)];
-    label.text = @"PureCode";
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, self.view.frame.size.height-50, self.view.frame.size.width, 25)];
+    //UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(20, 370.0, self.view.frame.size.width, 25)];
+    label.text = @"Copyright 2004-2013 ALIPAY.COM. All Rights Reserved.";
     label.center = contentView.center;
+    label.textColor = [UIColor colorWithHex:0xCCCCCC alpha:1];
+    label.font = [UIFont fontWithName:@"Helvetica" size:12.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.adjustsFontSizeToFitWidth = YES;
     //label.backgroundColor = [UIColor lightGrayColor];
     //label.textAlignment = UITextAlignmentCenter;
+    
+    
+    /**
+     * You can set font size by these properties
+     */
+    /**
+    [label setTextAlignment:NSTextAlignmentLeft];
+    
+    [label setBackgroundColor:[UIColor clearColor]];
+    
+    [label setAdjustsFontSizeToFitWidth:YES];
+    
+    [label setTextColor:[UIColor blackColor]];
+    
+    [label setUserInteractionEnabled:NO];
+    
+    [label setFont:[UIFont fontWithName:@"digital-7" size:60]];
+    
+    [label.layer.shadowColor =[[UIColor whiteColor ]CGColor ];
+    
+    [label.layer.shadowOffset=(CGSizeMake(0, 0));
+    
+    [label.layer.shadowOpacity=1;
+    
+    [label.layer.shadowRadius=3.0;
+    
+    [label.layer.masksToBounds=NO;
+    
+    [label.shadowColor=[UIColor darkGrayColor];
+    
+    [label.shadowOffset=CGSizeMake(0, 2);
+    */
+    
     [self.view addSubview:label];
+    
+    
     //创建button控件并作为subview添加到view
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setFrame:CGRectMake(50.0, 80.0, 77, 37)];
@@ -52,7 +93,8 @@
     Students *student = [[Students alloc]init];
 
     NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
-
+    
+    self.navigationItem.title = @"首页";
 }
 
 - (void)buttonPressed:(id)sender
