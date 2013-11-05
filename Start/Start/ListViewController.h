@@ -10,4 +10,12 @@
 
 @interface ListViewController : UIViewController
 
+@property (strong, nonatomic)NSArray *dataList;
+
+@property (strong, nonatomic)NSArray *list;
+
+@property (strong, nonatomic) UITableView *tableView;
+
+@property (strong, nonatomic)UITableViewCell *tableViewCell;
+
 @end

@@ -29,13 +29,13 @@
     NSLog(@"loadView");
     //创建view
     UIView *contentView = [[UIView alloc]initWithFrame: [[UIScreen mainScreen] applicationFrame]];
-    contentView.backgroundColor = [UIColor lightGrayColor];
+    //contentView.backgroundColor = [UIColor lightGrayColor];
     self.view = contentView;
     //创建label控件并作为subview添加到view
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, 30.0, 320, 30)];
     label.text = @"PureCode";
     label.center = contentView.center;
-    label.backgroundColor = [UIColor lightGrayColor];
+    //label.backgroundColor = [UIColor lightGrayColor];
     //label.textAlignment = UITextAlignmentCenter;
     [self.view addSubview:label];
     //创建button控件并作为subview添加到view
@@ -48,6 +48,7 @@
     
     //Students *student = [Students studentRealName:@"Alex" andLastName:@"Yan"];
     Students *student = [[Students alloc]init];
+
     NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
 
 }
@@ -65,7 +66,7 @@
     
     ListViewController *listViewController = [[ListViewController alloc]init];
     [self.navigationController pushViewController:listViewController animated:true];
-     
+
 }
 
 

@@ -17,4 +17,14 @@
     return  student;
 }
 
+-  (NSMethodSignature*)methodSignatureForSelector:(SEL)selector
+{
+    NSMethodSignature* signature = [super methodSignatureForSelector:selector];
+    if (!signature){
+        NSLog(@"Signature");
+        //signature = [self.carInfo methodSignatureForSelector:selector];
+    }
+    return signature;
+}
+
 @end
