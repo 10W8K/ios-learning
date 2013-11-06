@@ -53,6 +53,13 @@
  limitations under the License.
  */
 
+/**
+ * 1.由于JSONKit没有使用ARC，所以使用时不要忘了在build phases -》compile sources 选择文件后面加-fno-objc-arc参数。
+ * 2.Xcode升级出现的警告
+ *  array->isa = _JKArrayClass; 改成 object_setClass(array, _JKArrayClass);
+ *  dictionary->isa = _JKDictionaryClass; 改成 object_setClass(dictionary, _JKDictionaryClass);
+ */
+
 #include <stddef.h>
 #include <stdint.h>
 #include <limits.h>
