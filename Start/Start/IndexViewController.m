@@ -150,6 +150,7 @@
     NSLog(@"viewDidLoad");
 	// Do any additional setup after loading the view.
     self.textField = [[UITextField alloc]init];
+    [self.textField viewWithTag:3];
     [self.textField setFrame:CGRectMake(5.0, 180.0, self.view.frame.size.width-10, 37)];
     [self.textField setBorderStyle:UITextBorderStyleLine];//设置边框
     CALayer *textFieldLayer = [self.textField layer];
@@ -167,7 +168,19 @@
     UIView *view = (UIView *)[touch view];
     NSLog(@"touch");
     if(view == self.view){
-        [self.textField resignFirstResponder];
+        [self.textField resignFirstResponder];//第一种方法,再头文件中声明成全局控件
+        //[[self.view.subviews objectAtIndex:3] resignFirstResponder];//第二种方法,找到subViews数组中对应的view索引
+        /* 第三种方法 遍历subviews找到UITextField类型的view
+         * http://stackoverflow.com/questions/10395690/clear-uitextfield-data-when-coming-to-that-page-again-iphone
+         */
+        /*
+        NSArray *arraysubViews = [self.view subviews];
+        for(UIView *subView in arraysubViews){
+            if([subView isKindOfClass:[UITextField class]]){
+                [subView resignFirstResponder];
+            }
+        }
+         */
     }
 }
 
