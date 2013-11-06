@@ -17,6 +17,9 @@
 
 @implementation IndexViewController
 
+
+
+
 /**
  * ViewController的生命周期:
  * loadView -> viewDidLoad
@@ -83,15 +86,37 @@
     
     //创建button控件并作为subview添加到view
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setFrame:CGRectMake(50.0, 80.0, 77, 37)];
-    [button setTitle:@"Button" forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(5.0, 70.0, self.view.frame.size.width-10, 37)];
+    [button setTitle:@"UITableView" forState:UIControlStateNormal];
     //事件绑定:buttonPressed
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    //
+    CALayer *buttonLayer = [button layer];
+    [buttonLayer setBorderWidth:1.0];//设置边框
+    [buttonLayer setCornerRadius:4.0];//设置圆角半径
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [buttonLayer setBorderColor:colorref];
     [self.view addSubview:button];
+    //
+    UIButton *alertViewButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [alertViewButton setFrame:CGRectMake(5.0, 117.0, self.view.frame.size.width-10, 37)];
+    [alertViewButton setTitle:@"AlertView" forState:UIControlStateNormal];
+    //事件绑定:buttonPressed
+    [alertViewButton addTarget:self action:@selector(alertViewShow:) forControlEvents:UIControlEventTouchUpInside];
+    
+    CALayer *alertViewButtonLayer = [alertViewButton layer];
+    [alertViewButtonLayer setBorderWidth:1.0];//设置边框
+    [alertViewButtonLayer setCornerRadius:4.0];//设置圆角半径
+    CGColorSpaceRef alertViewColorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef alertViewColorref = CGColorCreate(alertViewColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [buttonLayer setBorderColor:alertViewColorref];
+    [self.view addSubview:alertViewButton];
+    
+
     
     //Students *student = [Students studentRealName:@"Alex" andLastName:@"Yan"];
     Students *student = [[Students alloc]init];
-
     NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
     
     self.navigationItem.title = @"首页";
@@ -99,25 +124,51 @@
 
 - (void)buttonPressed:(id)sender
 {
-    /**
+    ListViewController *listViewController = [[ListViewController alloc]init];
+    [self.navigationController pushViewController:listViewController animated:true];
+}
+
+- (void)alertViewShow:(id)sender
+{
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"ButtonPressed"
                                                    message:@"You have pressed the button"
                                                   delegate:nil
                                          cancelButtonTitle:@"cancel"
                                          otherButtonTitles:nil];
     [alert show];
-     */
-    
-    ListViewController *listViewController = [[ListViewController alloc]init];
-    [self.navigationController pushViewController:listViewController animated:true];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@"viewDidLoad");
 	// Do any additional setup after loading the view.
+    self.textField = [[UITextField alloc]init];
+    [self.textField setFrame:CGRectMake(5.0, 180.0, self.view.frame.size.width-10, 37)];
+    [self.textField setBorderStyle:UITextBorderStyleLine];//设置边框
+    CALayer *textFieldLayer = [self.textField layer];
+    CGColorSpaceRef textFieldColorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef textFieldColorref = CGColorCreate(textFieldColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [textFieldLayer setBorderColor:textFieldColorref];
+    self.textField.delegate = self;
+    [self.view addSubview:self.textField];
+}
+
+// 触摸背景，关闭键盘
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    UIView *view = (UIView *)[touch view];
+    NSLog(@"touch");
+    if(view == self.view){
+        [self.textField resignFirstResponder];
+    }
 }
 
 - (void)didReceiveMemoryWarning

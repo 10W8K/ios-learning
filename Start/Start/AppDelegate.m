@@ -7,6 +7,7 @@
 //
 #import "UIColor+Hex.h"
 #import "AppDelegate.h"
+#import "IndexViewController.h"
 
 @implementation AppDelegate
 

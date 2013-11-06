@@ -8,9 +8,16 @@
 
 #import "Students.h"
 #import <UIKit/UIKit.h>
-
-@interface IndexViewController : UIViewController
+/**
+ * 注意尖括号里的值
+ * 表示这个类遵循UITextFieldDelegate这个协议
+ */
+@interface IndexViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic)Students *student;
+
+@property (strong, nonatomic) UITextField *textField;
+
+- (BOOL)textFieldShouldReturn:(id)sender;
 
 @end

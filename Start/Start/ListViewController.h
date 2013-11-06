@@ -15,7 +15,7 @@
 
 @property (strong, nonatomic)NSArray *list;
 
-@property (strong, nonatomic) UITableView *tableView1;
+@property (strong, nonatomic) UITableView *tableView;
 
 @property (strong, nonatomic)UITableViewCell *tableViewCell;
 

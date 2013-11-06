@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class IndexViewController;
+
 #import "IndexViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

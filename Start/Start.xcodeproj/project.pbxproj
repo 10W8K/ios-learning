@@ -100,6 +100,21 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		FA67106F18292CEB00E11177 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA67107018292CF500E11177 /* Core Data */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FA67107018292CF500E11177 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		FAC6496D182913AA005096AB /* Custom Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +157,7 @@
 		FAFFA3ED1822A38D009CB36D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				FA67106F18292CEB00E11177 /* Resources */,
 				FAC6496D182913AA005096AB /* Custom Classes */,
 				FA1D6FF5182483350056209C /* Model */,
 				FAFFA4161822A601009CB36D /* View Controllers */,
