@@ -25,7 +25,16 @@
     
     
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.indexView];
-    self.window.rootViewController = nav;
+    //self.window.rootViewController = nav;
+    
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0){
+        NSLog(@">=4.0");
+        self.window.rootViewController = nav;
+    }else{
+        NSLog(@"<4.0");
+        [self.window addSubview:nav.view];
+    }
+    
     
     [self.window makeKeyAndVisible];
     return YES;

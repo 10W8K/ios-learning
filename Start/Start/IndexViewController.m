@@ -62,46 +62,81 @@
     
     //创建view
     UIView *contentView = [[UIView alloc]initWithFrame: [[UIScreen mainScreen] applicationFrame]];
-    //contentView.backgroundColor = [UIColor lightGrayColor];
     contentView.backgroundColor = [UIColor colorWithHex:0xF3F3F3 alpha:1];
     self.view = contentView;
     
+
+    //Students *student = [Students studentRealName:@"Alex" andLastName:@"Yan"];
+    Students *student = [[Students alloc]init];
+    NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
+    self.navigationItem.title = @"首页";
+ 
     
-    //创建label控件并作为subview添加到view
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20.0, self.view.frame.size.height-50, self.view.frame.size.width, 25)];
-    //UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(20, 370.0, self.view.frame.size.width, 25)];
-    label.text = @"Copyright 2004-2013 ALIPAY.COM. All Rights Reserved.";
-    label.center = contentView.center;
-    label.textColor = [UIColor colorWithHex:0xCCCCCC alpha:1];
-    label.font = [UIFont fontWithName:@"Helvetica" size:12.0];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.adjustsFontSizeToFitWidth = YES;
-    //label.backgroundColor = [UIColor lightGrayColor];
-    //label.textAlignment = UITextAlignmentCenter;
+    //HTTP请求
+    //1.同步GET
+    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url
+                                                 cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                             timeoutInterval:10];
     
+    NSData *received = [NSURLConnection sendSynchronousRequest:request
+                                             returningResponse:nil
+                                                         error:nil];
+    NSString *str = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",str);
     
-    /**
-     * You can set font size by these properties
-     */
-    /**
-     [label setTextAlignment:NSTextAlignmentLeft];
-     [label setBackgroundColor:[UIColor clearColor]];
-     [label setAdjustsFontSizeToFitWidth:YES];
-     [label setTextColor:[UIColor blackColor]];
-     [label setUserInteractionEnabled:NO];
-     [label setFont:[UIFont fontWithName:@"digital-7" size:60]];
-     [label.layer.shadowColor =[[UIColor whiteColor ]CGColor ];
-     [label.layer.shadowOffset=(CGSizeMake(0, 0));
-     [label.layer.shadowOpacity=1;
-     [label.layer.shadowRadius=3.0;
-     [label.layer.masksToBounds=NO;
-     [label.shadowColor=[UIColor darkGrayColor];
-     [label.shadowOffset=CGSizeMake(0, 2);
-     */
+    //2.同步Post
     
-    [self.view addSubview:label];
+    //create TextField
+    [self createTextField];
+    //create TabBar
+    [self createTabBar];
+    //create Label
+    [self createLabel];
+    //create Button
+    [self createButton];
+}
+
+
+//创建textField
+- (void)createTextField
+{
+    self.textField = [[UITextField alloc]init];
+    [self.textField viewWithTag:3];
     
+    //[self.textField setFrame:CGRectMake(5.0, 180.0, self.view.frame.size.width-10, 37)];
     
+    [self.textField setFrame:CGRectMake(5.0, self.view.bounds.size.height - 260, self.view.bounds.size.width - 10.0 , 44)];
+    
+    [self.textField setBorderStyle:UITextBorderStyleLine];//设置边框
+    //self.textField.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
+    CALayer *textFieldLayer = [self.textField layer];
+    CGColorSpaceRef textFieldColorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef textFieldColorref = CGColorCreate(textFieldColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [textFieldLayer setBorderColor:textFieldColorref];
+    self.textField.delegate = self;
+    [self.view addSubview:self.textField];
+
+}
+
+//创建TabBar
+- (void)createTabBar
+{
+    //TabBar
+    self.tabBar = [[UITabBar alloc]init];
+    [self.tabBar setFrame:CGRectMake(0, self.view.bounds.size.height -44, self.view.bounds.size.width, 44)];
+    self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
+    [self.tabBar setBackgroundColor:[UIColor colorWithHex:0xff6600]];
+    [self.view addSubview:self.tabBar];
+    
+    UITabBarItem *tabBarItem0 = [[UITabBarItem alloc]initWithTitle:@"首页" image:nil tag:0];
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc]initWithTitle:@"列表" image:nil tag:1];
+    NSArray *tabBarItemArray = [[NSArray alloc] initWithObjects: tabBarItem0,tabBarItem1,nil];
+    [self.tabBar setItems:tabBarItemArray];
+}
+
+- (void)createButton
+{
     //创建button控件并作为subview添加到view
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setFrame:CGRectMake(5.0, 70.0, self.view.frame.size.width-10, 37)];
@@ -130,26 +165,40 @@
     CGColorRef alertViewColorref = CGColorCreate(alertViewColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
     [buttonLayer setBorderColor:alertViewColorref];
     [self.view addSubview:alertViewButton];
+}
+
+- (void)createLabel
+{
+    //创建label控件并作为subview添加到view
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(5.0, self.view.bounds.size.height - 50, self.view.frame.size.width - 10, 25)];
+    label.text = @"Copyright 2004-2013 ALIPAY.COM. All Rights Reserved.";
+    //label.center = contentView.center;//这句设置之后,label垂直居中对齐
+    label.textColor = [UIColor colorWithHex:0xCCCCCC alpha:1];
+    label.font = [UIFont fontWithName:@"Helvetica" size:12.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.adjustsFontSizeToFitWidth = YES;
+    //label.backgroundColor = [UIColor lightGrayColor];
+    //label.textAlignment = UITextAlignmentCenter;
+    /**
+     * You can set font size by these properties
+     */
+    /**
+     [label setTextAlignment:NSTextAlignmentLeft];
+     [label setBackgroundColor:[UIColor clearColor]];
+     [label setAdjustsFontSizeToFitWidth:YES];
+     [label setTextColor:[UIColor blackColor]];
+     [label setUserInteractionEnabled:NO];
+     [label setFont:[UIFont fontWithName:@"digital-7" size:60]];
+     [label.layer.shadowColor =[[UIColor whiteColor ]CGColor ];
+     [label.layer.shadowOffset=(CGSizeMake(0, 0));
+     [label.layer.shadowOpacity=1;
+     [label.layer.shadowRadius=3.0;
+     [label.layer.masksToBounds=NO;
+     [label.shadowColor=[UIColor darkGrayColor];
+     [label.shadowOffset=CGSizeMake(0, 2);
+     */
     
-    
-    
-    //Students *student = [Students studentRealName:@"Alex" andLastName:@"Yan"];
-    Students *student = [[Students alloc]init];
-    NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
-    
-    self.navigationItem.title = @"首页";
- 
-    
-    self.textField = [[UITextField alloc]init];
-    [self.textField viewWithTag:3];
-    [self.textField setFrame:CGRectMake(5.0, 180.0, self.view.frame.size.width-10, 37)];
-    [self.textField setBorderStyle:UITextBorderStyleLine];//设置边框
-    CALayer *textFieldLayer = [self.textField layer];
-    CGColorSpaceRef textFieldColorSpace = CGColorSpaceCreateDeviceRGB();
-    CGColorRef textFieldColorref = CGColorCreate(textFieldColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
-    [textFieldLayer setBorderColor:textFieldColorref];
-    self.textField.delegate = self;
-    [self.view addSubview:self.textField];
+    [self.view addSubview:label];
 }
 
 // 触摸背景，关闭键盘
@@ -173,6 +222,26 @@
         }
          */
     }
+}
+
+- (BOOL)shouldAutorotate
+{
+    NSLog(@"shouldAutorotate");
+    return YES;
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    //这个方法是发生在翻转开始之前。一般用来禁用某些控件或者停止某些正在进行的活动，比如停止视频播放。
+    NSLog(@"willRotateToInterfaceOrientation");
+}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    //这个方法发生在翻转的过程中，一般用来定制翻转后各个控件的位置、大小等。可以用另外两个方法来代替
+    //willAnimateFirstHalfOfRotationToInterfaceOrientation:duration:   和  willAnimateSecondHalfOfRotationFromInterfaceOrientation:duration:
+    
+    NSLog(@"willAnimateRotationToInterfaceOrientation");
 }
 
 - (void)didReceiveMemoryWarning

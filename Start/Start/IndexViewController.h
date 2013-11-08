@@ -18,6 +18,8 @@
 
 @property (strong, nonatomic) UITextField *textField;
 
+@property (strong, nonatomic) UITabBar *tabBar;
+
 - (BOOL)textFieldShouldReturn:(id)sender;
 
 @end
