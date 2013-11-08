@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA1D6FF818248DC40056209C /* Students.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D6FF718248DC40056209C /* Students.m */; };
+		FA4A8443182CB41400C9D160 /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A8442182CB41400C9D160 /* AutoLayoutController.m */; };
 		FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FAC6497618291467005096AB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6497518291467005096AB /* UIColor+Hex.m */; };
 		FAD215211826028D0020F889 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD215201826028D0020F889 /* Circle.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		FA1D6FF618248DC40056209C /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
 		FA1D6FF718248DC40056209C /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
+		FA4A8441182CB41400C9D160 /* AutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutController.h; sourceTree = "<group>"; };
+		FA4A8442182CB41400C9D160 /* AutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutController.m; sourceTree = "<group>"; };
 		FA8D1AA3182A2D6E00CEE868 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		FAC6497418291467005096AB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				FAFFA41E1822B1AD009CB36D /* IndexViewController.m */,
 				FAF99B39182330D700ABB21B /* ListViewController.h */,
 				FAF99B3A182330D700ABB21B /* ListViewController.m */,
+				FA4A8441182CB41400C9D160 /* AutoLayoutController.h */,
+				FA4A8442182CB41400C9D160 /* AutoLayoutController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */,
 				FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */,
 				FAFFA41F1822B1AD009CB36D /* IndexViewController.m in Sources */,
+				FA4A8443182CB41400C9D160 /* AutoLayoutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

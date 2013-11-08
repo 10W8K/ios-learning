@@ -5,7 +5,7 @@
 //  Created by 想当当 on 13-10-31.
 //  Copyright (c) 2013年 想当当. All rights reserved.
 //
-
+#import "AutoLayoutController.h"
 #import "IndexViewController.h"
 #import "ListViewController.h"
 #import "UIColor+Hex.h"
@@ -36,6 +36,12 @@
 {
     ListViewController *listViewController = [[ListViewController alloc]init];
     [self.navigationController pushViewController:listViewController animated:true];
+}
+
+- (void)autoLayoutButtonPressed:(id)sender
+{
+    AutoLayoutController *autoLayoutController = [[AutoLayoutController alloc]init];
+    [self.navigationController pushViewController:autoLayoutController animated:true];
 }
 
 - (void)alertViewShow:(id)sender
@@ -165,6 +171,22 @@
     CGColorRef alertViewColorref = CGColorCreate(alertViewColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
     [buttonLayer setBorderColor:alertViewColorref];
     [self.view addSubview:alertViewButton];
+    
+    
+    UIButton *autoLayoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [autoLayoutButton setFrame:CGRectMake(5.0, 167.0, self.view.frame.size.width-10, 37)];
+    [autoLayoutButton setTitle:@"AutoLayoutView" forState:UIControlStateNormal];
+    //事件绑定:buttonPressed
+    [autoLayoutButton addTarget:self action:@selector(autoLayoutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    CALayer *autoLayoutButtonLayer = [autoLayoutButton layer];
+    [autoLayoutButtonLayer setBorderWidth:1.0];//设置边框
+    [autoLayoutButtonLayer setCornerRadius:4.0];//设置圆角半径
+    CGColorSpaceRef autoLayoutColorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef autoLayoutColorref = CGColorCreate(autoLayoutColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [buttonLayer setBorderColor:autoLayoutColorref];
+    [self.view addSubview:autoLayoutButton];
+    
+
 }
 
 - (void)createLabel
