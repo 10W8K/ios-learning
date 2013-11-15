@@ -76,7 +76,7 @@
     Students *student = [[Students alloc]init];
     NSLog(@"%@",[student studentRealName:@"Alex" andLastName:@"Yan"].realname);
     self.navigationItem.title = @"首页";
- 
+
     
     //HTTP请求
     //1.同步GET

@@ -280,6 +280,7 @@
 		FA91E7CF1835F7E200183232 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA91E7CE1835F7E200183232 /* libwebsockets.a */; };
 		FA91E7D51835F7E200183232 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA91E7D41835F7E200183232 /* AppDelegate.cpp */; };
 		FA91E7D81835F7E200183232 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA91E7D71835F7E200183232 /* HelloWorldScene.cpp */; };
+		FA91E7E41835FB5C00183232 /* Layer1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA91E7E21835FB5C00183232 /* Layer1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +874,8 @@
 		FA91E7D41835F7E200183232 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		FA91E7D61835F7E200183232 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		FA91E7D71835F7E200183232 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		FA91E7E21835FB5C00183232 /* Layer1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Layer1.cpp; path = Classes/UI/Layer1.cpp; sourceTree = "<group>"; };
+		FA91E7E31835FB5C00183232 /* Layer1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Layer1.h; path = Classes/UI/Layer1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2093,12 +2096,22 @@
 		FA91E7D21835F7E200183232 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA91E7DE1835FAAC00183232 /* UI */,
 				FA91E7D31835F7E200183232 /* AppDelegate.h */,
 				FA91E7D41835F7E200183232 /* AppDelegate.cpp */,
 				FA91E7D61835F7E200183232 /* HelloWorldScene.h */,
 				FA91E7D71835F7E200183232 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		FA91E7DE1835FAAC00183232 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA91E7E21835FB5C00183232 /* Layer1.cpp */,
+				FA91E7E31835FB5C00183232 /* Layer1.h */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2183,6 +2196,7 @@
 				FA91E7681835F7E200183232 /* spine-cocos2dx.cpp in Sources */,
 				FA91E5011835F7E000183232 /* mat4.c in Sources */,
 				FA91E5741835F7E000183232 /* CCCommon.mm in Sources */,
+				FA91E7E41835FB5C00183232 /* Layer1.cpp in Sources */,
 				FA91E7591835F7E200183232 /* SkeletonData.cpp in Sources */,
 				FA91E4C71835F7E000183232 /* CCZone.cpp in Sources */,
 				FA91E6241835F7E100183232 /* CCTextFieldTTF.cpp in Sources */,
