@@ -8,6 +8,7 @@
 #import "AutoLayoutController.h"
 #import "IndexViewController.h"
 #import "ListViewController.h"
+#import "WelComeViewController.h"
 #import "UIColor+Hex.h"
 #import "Students.h"
 
@@ -52,6 +53,11 @@
                                          cancelButtonTitle:@"cancel"
                                          otherButtonTitles:nil];
     [alert show];
+}
+
+- (void)goToWelComePage:(id)sender{
+    WelComeViewController *welcomeController = [[WelComeViewController alloc]init];
+    [self.navigationController pushViewController:welcomeController animated:true];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -185,6 +191,21 @@
     CGColorRef autoLayoutColorref = CGColorCreate(autoLayoutColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
     [buttonLayer setBorderColor:autoLayoutColorref];
     [self.view addSubview:autoLayoutButton];
+    
+    
+    
+    UIButton *welcomeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [welcomeButton setFrame:CGRectMake(5.0, 217.0, self.view.frame.size.width-10, 37)];
+    [welcomeButton setTitle:@"WelCome!" forState:UIControlStateNormal];
+    //事件绑定:buttonPressed
+    [welcomeButton addTarget:self action:@selector(goToWelComePage:) forControlEvents:UIControlEventTouchUpInside];
+    CALayer *welcomeButtonLayer = [welcomeButton layer];
+    [welcomeButtonLayer setBorderWidth:1.0];//设置边框
+    [welcomeButtonLayer setCornerRadius:4.0];//设置圆角半径
+    CGColorSpaceRef welcomeColorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef welcomeColorref = CGColorCreate(welcomeColorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+    [welcomeButtonLayer setBorderColor:welcomeColorref];
+    [self.view addSubview:welcomeButton];
     
 
 }
