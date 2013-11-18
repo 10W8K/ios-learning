@@ -15,8 +15,10 @@
 
 @property (strong, nonatomic)NSArray *list;
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic)UITableView *tableView;
 
 @property (strong, nonatomic)UITableViewCell *tableViewCell;
+
+@property (strong, nonatomic)UIRefreshControl *refresh;
 
 @end

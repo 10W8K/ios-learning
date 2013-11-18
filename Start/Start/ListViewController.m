@@ -57,9 +57,24 @@
     //self.tableView.delegate = self;
     //self.myTableView = tableView;
     //[self.view addSubview:self.tableView];
-    
     self.navigationItem.title = @"列表";
     
+    
+    // 下拉刷新
+    self.refresh = [[UIRefreshControl alloc]init];
+    [self.refresh addTarget:self action:@selector(refreshedByPullingTable:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:self.refresh];
+    
+}
+
+- (void)refreshedByPullingTable:(id)sender{
+    [self.refresh beginRefreshing];
+    //
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(),^(void){
+        [self.refresh endRefreshing];
+    });
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
