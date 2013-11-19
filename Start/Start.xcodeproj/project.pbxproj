@@ -12,6 +12,7 @@
 		FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FAC6497618291467005096AB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6497518291467005096AB /* UIColor+Hex.m */; };
 		FAD215211826028D0020F889 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD215201826028D0020F889 /* Circle.m */; };
+		FAE506E3183B13430059354E /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE506E2183B13430059354E /* NavController.m */; };
 		FAF226001839BAFD00924B7F /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF225FF1839BAFD00924B7F /* WelComeViewController.m */; };
 		FAF226051839EB6B00924B7F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226021839EB6B00924B7F /* Default.png */; };
 		FAF226061839EB6B00924B7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226031839EB6B00924B7F /* Default-568h@2x.png */; };
@@ -58,6 +59,8 @@
 		FAC6497518291467005096AB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		FAD2151F1826028D0020F889 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		FAD215201826028D0020F889 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		FAE506E1183B13430059354E /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		FAE506E2183B13430059354E /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 		FAF225FE1839BAFD00924B7F /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
 		FAF225FF1839BAFD00924B7F /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
 		FAF226021839EB6B00924B7F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				FA4A8442182CB41400C9D160 /* AutoLayoutController.m */,
 				FAF225FE1839BAFD00924B7F /* WelComeViewController.h */,
 				FAF225FF1839BAFD00924B7F /* WelComeViewController.m */,
+				FAE506E1183B13430059354E /* NavController.h */,
+				FAE506E2183B13430059354E /* NavController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				FAFFA3F41822A38D009CB36D /* main.m in Sources */,
 				FAD215211826028D0020F889 /* Circle.m in Sources */,
 				FAC6497618291467005096AB /* UIColor+Hex.m in Sources */,
+				FAE506E3183B13430059354E /* NavController.m in Sources */,
 				FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */,
 				FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */,
 				FAFFA41F1822B1AD009CB36D /* IndexViewController.m in Sources */,

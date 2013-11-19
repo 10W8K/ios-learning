@@ -11,11 +11,14 @@
 @class IndexViewController;
 
 #import "IndexViewController.h"
+#import "WelComeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) IndexViewController *indexView;
+
+@property (strong, nonatomic) WelComeViewController *welcomeView;
 
 @end

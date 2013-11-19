@@ -7,6 +7,8 @@
 //
 
 #import "WelComeViewController.h"
+#import "IndexViewController.h"
+#import "NavController.h"
 #import "UIColor+Hex.h"
 
 @interface WelComeViewController ()
@@ -41,7 +43,7 @@
     
     int _x = 0;
     for (int index = 0; index < 4; index++){
-        UIImageView *imgScrollView = [[UIImageView alloc] initWithFrame:CGRectMake(0+_x, 0, 320, 510)];
+        UIImageView *imgScrollView = [[UIImageView alloc] initWithFrame:CGRectMake(0+_x, 0, 320, 550)];
         imgScrollView.tag = index;
         NSString *imgName = [NSString stringWithFormat:@"%d.png", index + 1];
         imgScrollView.image = [UIImage imageNamed:imgName];
@@ -79,7 +81,18 @@
     int current = scrollView.contentOffset.x / 320 ;
     UIPageControl *pageControl = (UIPageControl *)[self.view viewWithTag:101];
     pageControl.currentPage = current;
+    if (current == 3) {
+        //NavController * nav = [[NavController alloc] init];
 
+        IndexViewController * index = [[IndexViewController alloc]init];
+        [self.navigationController pushViewController:index animated:true];
+        [self.navigationController setNavigationBarHidden:false];
+        /**
+        [self presentViewController:nav animated:true completion:^{
+            NSLog(@"jumped....");
+        }];
+         */
+    }
 }
 
 - (void)didReceiveMemoryWarning

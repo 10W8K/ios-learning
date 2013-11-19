@@ -8,6 +8,7 @@
 #import "UIColor+Hex.h"
 #import "AppDelegate.h"
 #import "IndexViewController.h"
+#import "WelComeViewController.h"
 
 @implementation AppDelegate
 
@@ -22,17 +23,21 @@
     self.indexView = [[IndexViewController alloc] init];
     //self.window.rootViewController = self.indexView;
     
+    self.welcomeView = [[WelComeViewController alloc] init];
     
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.indexView];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.welcomeView];
+    [nav setNavigationBarHidden:true];
     //self.window.rootViewController = nav;
     
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0){
         NSLog(@">=4.0");
         self.window.rootViewController = nav;
+        //self.window.rootViewController = self.welcomeView;
     }else{
         NSLog(@"<4.0");
         [self.window addSubview:nav.view];
+        //[self.window addSubview:self.welcomeView.view];
     }
     
     
