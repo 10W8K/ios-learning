@@ -43,7 +43,7 @@
     
     int _x = 0;
     for (int index = 0; index < 4; index++){
-        UIImageView *imgScrollView = [[UIImageView alloc] initWithFrame:CGRectMake(0+_x, 0, 320, 550)];
+        UIImageView *imgScrollView = [[UIImageView alloc] initWithFrame:CGRectMake(0+_x, 0, 320, 570)];
         imgScrollView.tag = index;
         NSString *imgName = [NSString stringWithFormat:@"%d.png", index + 1];
         imgScrollView.image = [UIImage imageNamed:imgName];
@@ -73,6 +73,10 @@
                                                                         views:NSDictionaryOfVariableBindings(pageControl)]];
      **/
     
+
+
+    [self.navigationController setNavigationBarHidden:true];
+    
 }
 
 
@@ -87,6 +91,8 @@
         IndexViewController * index = [[IndexViewController alloc]init];
         [self.navigationController pushViewController:index animated:true];
         [self.navigationController setNavigationBarHidden:false];
+        //[self.navigationController.navigationItem hidesBackButton];
+        
         /**
         [self presentViewController:nav animated:true completion:^{
             NSLog(@"jumped....");
@@ -100,5 +106,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/**
+ * 隐藏status bar
+ * http://stackoverflow.com/questions/17763719/status-bar-wont-disappear
+ */
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 
 @end

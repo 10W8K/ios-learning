@@ -107,6 +107,9 @@
     [self createLabel];
     //create Button
     [self createButton];
+    
+    //隐藏后退按钮
+    self.navigationItem.hidesBackButton = YES;
 }
 
 

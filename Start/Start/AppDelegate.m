@@ -27,7 +27,6 @@
     
     
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.welcomeView];
-    [nav setNavigationBarHidden:true];
     //self.window.rootViewController = nav;
     
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0){
@@ -76,5 +75,6 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     NSLog(@"applicationWillTerminate");
 }
+
 
 @end
