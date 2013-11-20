@@ -12,10 +12,10 @@
 		FA026CF1183C5D3900179A16 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEA183C5D3900179A16 /* ListViewController.m */; };
 		FA026CF2183C5D3900179A16 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEC183C5D3900179A16 /* NavController.m */; };
 		FA026CF3183C5D3900179A16 /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEE183C5D3900179A16 /* WelComeViewController.m */; };
-		FA1D6FF818248DC40056209C /* Students.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D6FF718248DC40056209C /* Students.m */; };
+		FA026CF9183C5E1100179A16 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CF6183C5E1100179A16 /* Circle.m */; };
+		FA026CFA183C5E1100179A16 /* Students.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CF8183C5E1100179A16 /* Students.m */; };
 		FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FAC6497618291467005096AB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6497518291467005096AB /* UIColor+Hex.m */; };
-		FAD215211826028D0020F889 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD215201826028D0020F889 /* Circle.m */; };
 		FAF226051839EB6B00924B7F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226021839EB6B00924B7F /* Default.png */; };
 		FAF226061839EB6B00924B7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226031839EB6B00924B7F /* Default-568h@2x.png */; };
 		FAF226071839EB6B00924B7F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226041839EB6B00924B7F /* Default@2x.png */; };
@@ -59,14 +59,14 @@
 		FA026CEC183C5D3900179A16 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 		FA026CED183C5D3900179A16 /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
 		FA026CEE183C5D3900179A16 /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
-		FA1D6FF618248DC40056209C /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
-		FA1D6FF718248DC40056209C /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
+		FA026CF5183C5E1100179A16 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		FA026CF6183C5E1100179A16 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		FA026CF7183C5E1100179A16 /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
+		FA026CF8183C5E1100179A16 /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
 		FA8D1AA3182A2D6E00CEE868 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		FAC6497418291467005096AB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		FAC6497518291467005096AB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
-		FAD2151F1826028D0020F889 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
-		FAD215201826028D0020F889 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		FAF226021839EB6B00924B7F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FAF226031839EB6B00924B7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FAF226041839EB6B00924B7F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -134,15 +134,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		FA1D6FF5182483350056209C /* Model */ = {
+		FA026CF4183C5E1100179A16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA1D6FF618248DC40056209C /* Students.h */,
-				FA1D6FF718248DC40056209C /* Students.m */,
-				FAD2151F1826028D0020F889 /* Circle.h */,
-				FAD215201826028D0020F889 /* Circle.m */,
+				FA026CF5183C5E1100179A16 /* Circle.h */,
+				FA026CF6183C5E1100179A16 /* Circle.m */,
+				FA026CF7183C5E1100179A16 /* Students.h */,
+				FA026CF8183C5E1100179A16 /* Students.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FA67106F18292CEB00E11177 /* Resources */ = {
@@ -220,10 +220,10 @@
 		FAFFA3ED1822A38D009CB36D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				FA026CF4183C5E1100179A16 /* Model */,
 				FA026CE4183C5D3900179A16 /* View Controllers */,
 				FA67106F18292CEB00E11177 /* Resources */,
 				FAC6496D182913AA005096AB /* Custom Classes */,
-				FA1D6FF5182483350056209C /* Model */,
 				FAFFA3F61822A38D009CB36D /* AppDelegate.h */,
 				FAFFA3F71822A38D009CB36D /* AppDelegate.m */,
 				FAFFA3F91822A38D009CB36D /* Images.xcassets */,
@@ -365,14 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFFA3F81822A38D009CB36D /* AppDelegate.m in Sources */,
-				FA1D6FF818248DC40056209C /* Students.m in Sources */,
 				FA026CF1183C5D3900179A16 /* ListViewController.m in Sources */,
 				FAFFA3F41822A38D009CB36D /* main.m in Sources */,
-				FAD215211826028D0020F889 /* Circle.m in Sources */,
 				FAC6497618291467005096AB /* UIColor+Hex.m in Sources */,
 				FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */,
+				FA026CFA183C5E1100179A16 /* Students.m in Sources */,
 				FA026CF2183C5D3900179A16 /* NavController.m in Sources */,
 				FA026CEF183C5D3900179A16 /* AutoLayoutController.m in Sources */,
+				FA026CF9183C5E1100179A16 /* Circle.m in Sources */,
 				FA026CF0183C5D3900179A16 /* IndexViewController.m in Sources */,
 				FA026CF3183C5D3900179A16 /* WelComeViewController.m in Sources */,
 			);
