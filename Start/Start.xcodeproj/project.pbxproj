@@ -22,8 +22,7 @@
 		FA026D0B183C5EB700179A16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA026D03183C5EB700179A16 /* Default-568h@2x.png */; };
 		FA026D0C183C5EB700179A16 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA026D04183C5EB700179A16 /* Default.png */; };
 		FA026D0D183C5EB700179A16 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA026D05183C5EB700179A16 /* Default@2x.png */; };
-		FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAC6497618291467005096AB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6497518291467005096AB /* UIColor+Hex.m */; };
+		FA026D14183C5F5D00179A16 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D12183C5F5D00179A16 /* UIColor+Hex.m */; };
 		FAFFA3E81822A38D009CB36D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E71822A38D009CB36D /* Foundation.framework */; };
 		FAFFA3EA1822A38D009CB36D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */; };
 		FAFFA3EC1822A38D009CB36D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3EB1822A38D009CB36D /* UIKit.framework */; };
@@ -71,10 +70,8 @@
 		FA026D03183C5EB700179A16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FA026D04183C5EB700179A16 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA026D05183C5EB700179A16 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FA8D1AA3182A2D6E00CEE868 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		FAC6497418291467005096AB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		FAC6497518291467005096AB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		FA026D11183C5F5D00179A16 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		FA026D12183C5F5D00179A16 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		FAFFA3E41822A38D009CB36D /* Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFA3E71822A38D009CB36D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,15 +173,13 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		FAC6496D182913AA005096AB /* Custom Classes */ = {
+		FA026D0E183C5F5D00179A16 /* Custom Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FAC6497418291467005096AB /* UIColor+Hex.h */,
-				FAC6497518291467005096AB /* UIColor+Hex.m */,
-				FA8D1AA3182A2D6E00CEE868 /* JSONKit.h */,
-				FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */,
+				FA026D11183C5F5D00179A16 /* UIColor+Hex.h */,
+				FA026D12183C5F5D00179A16 /* UIColor+Hex.m */,
 			);
-			name = "Custom Classes";
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 		FAFFA3DB1822A38D009CB36D = {
@@ -220,10 +215,10 @@
 		FAFFA3ED1822A38D009CB36D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				FA026D0E183C5F5D00179A16 /* Custom Classes */,
 				FA026CFB183C5EB700179A16 /* Resources */,
 				FA026CF4183C5E1100179A16 /* Model */,
 				FA026CE4183C5D3900179A16 /* View Controllers */,
-				FAC6496D182913AA005096AB /* Custom Classes */,
 				FAFFA3F61822A38D009CB36D /* AppDelegate.h */,
 				FAFFA3F71822A38D009CB36D /* AppDelegate.m */,
 				FAFFA3F91822A38D009CB36D /* Images.xcassets */,
@@ -367,14 +362,13 @@
 				FAFFA3F81822A38D009CB36D /* AppDelegate.m in Sources */,
 				FA026CF1183C5D3900179A16 /* ListViewController.m in Sources */,
 				FAFFA3F41822A38D009CB36D /* main.m in Sources */,
-				FAC6497618291467005096AB /* UIColor+Hex.m in Sources */,
-				FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */,
 				FA026CFA183C5E1100179A16 /* Students.m in Sources */,
 				FA026CF2183C5D3900179A16 /* NavController.m in Sources */,
 				FA026CEF183C5D3900179A16 /* AutoLayoutController.m in Sources */,
 				FA026CF9183C5E1100179A16 /* Circle.m in Sources */,
 				FA026CF0183C5D3900179A16 /* IndexViewController.m in Sources */,
 				FA026CF3183C5D3900179A16 /* WelComeViewController.m in Sources */,
+				FA026D14183C5F5D00179A16 /* UIColor+Hex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
