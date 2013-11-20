@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA026CEF183C5D3900179A16 /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CE6183C5D3900179A16 /* AutoLayoutController.m */; };
+		FA026CF0183C5D3900179A16 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CE8183C5D3900179A16 /* IndexViewController.m */; };
+		FA026CF1183C5D3900179A16 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEA183C5D3900179A16 /* ListViewController.m */; };
+		FA026CF2183C5D3900179A16 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEC183C5D3900179A16 /* NavController.m */; };
+		FA026CF3183C5D3900179A16 /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026CEE183C5D3900179A16 /* WelComeViewController.m */; };
 		FA1D6FF818248DC40056209C /* Students.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D6FF718248DC40056209C /* Students.m */; };
-		FA4A8443182CB41400C9D160 /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A8442182CB41400C9D160 /* AutoLayoutController.m */; };
 		FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FAC6497618291467005096AB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6497518291467005096AB /* UIColor+Hex.m */; };
 		FAD215211826028D0020F889 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD215201826028D0020F889 /* Circle.m */; };
-		FAE506E3183B13430059354E /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE506E2183B13430059354E /* NavController.m */; };
-		FAF226001839BAFD00924B7F /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF225FF1839BAFD00924B7F /* WelComeViewController.m */; };
 		FAF226051839EB6B00924B7F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226021839EB6B00924B7F /* Default.png */; };
 		FAF226061839EB6B00924B7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226031839EB6B00924B7F /* Default-568h@2x.png */; };
 		FAF226071839EB6B00924B7F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226041839EB6B00924B7F /* Default@2x.png */; };
@@ -22,7 +24,6 @@
 		FAF2264A1839F4A900924B7F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226451839F4A900924B7F /* 2.png */; };
 		FAF2264B1839F4A900924B7F /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226461839F4A900924B7F /* 3.png */; };
 		FAF2264C1839F4A900924B7F /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF226471839F4A900924B7F /* 4.png */; };
-		FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF99B3A182330D700ABB21B /* ListViewController.m */; };
 		FAFFA3E81822A38D009CB36D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E71822A38D009CB36D /* Foundation.framework */; };
 		FAFFA3EA1822A38D009CB36D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */; };
 		FAFFA3EC1822A38D009CB36D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3EB1822A38D009CB36D /* UIKit.framework */; };
@@ -35,7 +36,6 @@
 		FAFFA4031822A38D009CB36D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFFA3EB1822A38D009CB36D /* UIKit.framework */; };
 		FAFFA40B1822A38D009CB36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAFFA4091822A38D009CB36D /* InfoPlist.strings */; };
 		FAFFA40D1822A38D009CB36D /* StartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFFA40C1822A38D009CB36D /* StartTests.m */; };
-		FAFFA41F1822B1AD009CB36D /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFFA41E1822B1AD009CB36D /* IndexViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,20 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA026CE5183C5D3900179A16 /* AutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutController.h; sourceTree = "<group>"; };
+		FA026CE6183C5D3900179A16 /* AutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutController.m; sourceTree = "<group>"; };
+		FA026CE7183C5D3900179A16 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		FA026CE8183C5D3900179A16 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		FA026CE9183C5D3900179A16 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FA026CEA183C5D3900179A16 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		FA026CEB183C5D3900179A16 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		FA026CEC183C5D3900179A16 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		FA026CED183C5D3900179A16 /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
+		FA026CEE183C5D3900179A16 /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
 		FA1D6FF618248DC40056209C /* Students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Students.h; sourceTree = "<group>"; };
 		FA1D6FF718248DC40056209C /* Students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Students.m; sourceTree = "<group>"; };
-		FA4A8441182CB41400C9D160 /* AutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutController.h; sourceTree = "<group>"; };
-		FA4A8442182CB41400C9D160 /* AutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutController.m; sourceTree = "<group>"; };
 		FA8D1AA3182A2D6E00CEE868 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		FA8D1AA4182A2D6E00CEE868 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		FAC6497418291467005096AB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		FAC6497518291467005096AB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		FAD2151F1826028D0020F889 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		FAD215201826028D0020F889 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
-		FAE506E1183B13430059354E /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
-		FAE506E2183B13430059354E /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
-		FAF225FE1839BAFD00924B7F /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
-		FAF225FF1839BAFD00924B7F /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
 		FAF226021839EB6B00924B7F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FAF226031839EB6B00924B7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FAF226041839EB6B00924B7F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -71,8 +75,6 @@
 		FAF226451839F4A900924B7F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		FAF226461839F4A900924B7F /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		FAF226471839F4A900924B7F /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
-		FAF99B39182330D700ABB21B /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		FAF99B3A182330D700ABB21B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		FAFFA3E41822A38D009CB36D /* Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFA3E71822A38D009CB36D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,8 +91,6 @@
 		FAFFA4081822A38D009CB36D /* StartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StartTests-Info.plist"; sourceTree = "<group>"; };
 		FAFFA40A1822A38D009CB36D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAFFA40C1822A38D009CB36D /* StartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartTests.m; sourceTree = "<group>"; };
-		FAFFA41D1822B1AD009CB36D /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
-		FAFFA41E1822B1AD009CB36D /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA026CE4183C5D3900179A16 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA026CE5183C5D3900179A16 /* AutoLayoutController.h */,
+				FA026CE6183C5D3900179A16 /* AutoLayoutController.m */,
+				FA026CE7183C5D3900179A16 /* IndexViewController.h */,
+				FA026CE8183C5D3900179A16 /* IndexViewController.m */,
+				FA026CE9183C5D3900179A16 /* ListViewController.h */,
+				FA026CEA183C5D3900179A16 /* ListViewController.m */,
+				FA026CEB183C5D3900179A16 /* NavController.h */,
+				FA026CEC183C5D3900179A16 /* NavController.m */,
+				FA026CED183C5D3900179A16 /* WelComeViewController.h */,
+				FA026CEE183C5D3900179A16 /* WelComeViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		FA1D6FF5182483350056209C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,10 +220,10 @@
 		FAFFA3ED1822A38D009CB36D /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				FA026CE4183C5D3900179A16 /* View Controllers */,
 				FA67106F18292CEB00E11177 /* Resources */,
 				FAC6496D182913AA005096AB /* Custom Classes */,
 				FA1D6FF5182483350056209C /* Model */,
-				FAFFA4161822A601009CB36D /* View Controllers */,
 				FAFFA3F61822A38D009CB36D /* AppDelegate.h */,
 				FAFFA3F71822A38D009CB36D /* AppDelegate.m */,
 				FAFFA3F91822A38D009CB36D /* Images.xcassets */,
@@ -242,23 +259,6 @@
 				FAFFA4091822A38D009CB36D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAFFA4161822A601009CB36D /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FAFFA41D1822B1AD009CB36D /* IndexViewController.h */,
-				FAFFA41E1822B1AD009CB36D /* IndexViewController.m */,
-				FAF99B39182330D700ABB21B /* ListViewController.h */,
-				FAF99B3A182330D700ABB21B /* ListViewController.m */,
-				FA4A8441182CB41400C9D160 /* AutoLayoutController.h */,
-				FA4A8442182CB41400C9D160 /* AutoLayoutController.m */,
-				FAF225FE1839BAFD00924B7F /* WelComeViewController.h */,
-				FAF225FF1839BAFD00924B7F /* WelComeViewController.m */,
-				FAE506E1183B13430059354E /* NavController.h */,
-				FAE506E2183B13430059354E /* NavController.m */,
-			);
-			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,15 +366,15 @@
 			files = (
 				FAFFA3F81822A38D009CB36D /* AppDelegate.m in Sources */,
 				FA1D6FF818248DC40056209C /* Students.m in Sources */,
+				FA026CF1183C5D3900179A16 /* ListViewController.m in Sources */,
 				FAFFA3F41822A38D009CB36D /* main.m in Sources */,
 				FAD215211826028D0020F889 /* Circle.m in Sources */,
 				FAC6497618291467005096AB /* UIColor+Hex.m in Sources */,
-				FAE506E3183B13430059354E /* NavController.m in Sources */,
-				FAF99B3B182330D700ABB21B /* ListViewController.m in Sources */,
 				FA8D1AA5182A2D6E00CEE868 /* JSONKit.m in Sources */,
-				FAFFA41F1822B1AD009CB36D /* IndexViewController.m in Sources */,
-				FA4A8443182CB41400C9D160 /* AutoLayoutController.m in Sources */,
-				FAF226001839BAFD00924B7F /* WelComeViewController.m in Sources */,
+				FA026CF2183C5D3900179A16 /* NavController.m in Sources */,
+				FA026CEF183C5D3900179A16 /* AutoLayoutController.m in Sources */,
+				FA026CF0183C5D3900179A16 /* IndexViewController.m in Sources */,
+				FA026CF3183C5D3900179A16 /* WelComeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
