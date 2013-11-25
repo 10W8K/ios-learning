@@ -10,35 +10,70 @@
 #import "IndexViewController.h"
 #import "WelComeViewController.h"
 
+#import "MMCenterTableViewController.h"
+#import "MMLeftSideDrawerViewController.h"
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "MMDrawerVisualStateManager.h"
+#import "MMLeftSideDrawerViewController.h"
+#import "MMRightSideDrawerViewController.h"
+
+#import <QuartzCore/QuartzCore.h>
+
 @implementation AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"didFinishLaunchingWithOptions");
+    
+    self.leftSideDrawerViewController = [[MMLeftSideDrawerViewController alloc] init];
+    
+    self.rightSideDrawerViewController = [[MMRightSideDrawerViewController alloc] init];
+
+    self.indexViewController = [[IndexViewController alloc] init];
+    
+    self.welcomeViewController = [[WelComeViewController alloc] init];
+    
+    self.centerViewController = [[MMCenterTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    
+    self.navigatorController = [[UINavigationController alloc]initWithRootViewController:self.indexViewController];
+    
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:self.navigatorController
+                             leftDrawerViewController:self.leftSideDrawerViewController
+                             rightDrawerViewController:self.rightSideDrawerViewController
+                             ];
+    
+    [self.drawerController setMaximumLeftDrawerWidth:200.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+        MMDrawerControllerDrawerVisualStateBlock block;
+        block = [[MMDrawerVisualStateManager sharedManager] drawerVisualStateBlockForDrawerSide:drawerSide];
+        if(block){
+            block(drawerController, drawerSide, percentVisible);
+        }
+    }];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
     self.window.backgroundColor = [UIColor whiteColor];
-    //self.window.backgroundColor = [UIColor colorWithHex:0xF9F9F9 alpha:1];
-    self.indexView = [[IndexViewController alloc] init];
-    //self.window.rootViewController = self.indexView;
-    
-    self.welcomeView = [[WelComeViewController alloc] init];
-    
-    
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.welcomeView];
-    //self.window.rootViewController = nav;
-    
+    [self.window setRootViewController:self.drawerController];
+
+
+    /**
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0){
         NSLog(@">=4.0");
-        self.window.rootViewController = nav;
+        self.window.rootViewController = self.navigatorController;
         //self.window.rootViewController = self.welcomeView;
     }else{
         NSLog(@"<4.0");
-        [self.window addSubview:nav.view];
+        [self.window addSubview:self.navigatorController.view];
         //[self.window addSubview:self.welcomeView.view];
     }
-    
+    **/
     
     [self.window makeKeyAndVisible];
     return YES;

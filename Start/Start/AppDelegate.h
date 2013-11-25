@@ -12,13 +12,26 @@
 
 #import "IndexViewController.h"
 #import "WelComeViewController.h"
+#import "MMDrawerController.h"
+#import "MMLeftSideDrawerViewController.h"
+#import "MMRightSideDrawerViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) IndexViewController *indexView;
+@property (strong, nonatomic) UINavigationController *navigatorController;
 
-@property (strong, nonatomic) WelComeViewController *welcomeView;
+@property (strong, nonatomic) MMLeftSideDrawerViewController * leftSideDrawerViewController;
+
+@property (strong, nonatomic) MMRightSideDrawerViewController * rightSideDrawerViewController;
+
+@property (strong, nonatomic) IndexViewController *indexViewController;
+
+@property (strong, nonatomic) WelComeViewController *welcomeViewController;
+
+@property (strong, nonatomic) MMDrawerController * drawerController;
+
+@property (strong, nonatomic) UIViewController * centerViewController;
 
 @end

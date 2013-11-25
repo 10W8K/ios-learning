@@ -12,13 +12,24 @@
 #import "UIColor+Hex.h"
 #import "Students.h"
 
+
+//#import "MMExampleCenterTableViewController.h"
+//#import "MMExampleDrawerVisualStateManager.h"
+#import "UIViewController+MMDrawerController.h"
+#import "MMDrawerBarButtonItem.h"
+#import "MMLogoView.h"
+//#import "MMCenterTableViewCell.h"
+//#import "MMExampleLeftSideDrawerViewController.h"
+//#import "MMExampleRightSideDrawerViewController.h"
+//#import "MMNavigationController.h"
+
+
+
 @interface IndexViewController ()
 
 @end
 
 @implementation IndexViewController
-
-
 
 
 /**
@@ -108,10 +119,17 @@
     //create Button
     [self createButton];
     
+    [self setupLeftMenuButton];
+    
     //隐藏后退按钮
     self.navigationItem.hidesBackButton = YES;
 }
 
+- (void)setupLeftMenuButton{
+    MMDrawerBarButtonItem * leftBarButtonItem = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
+    [self.navigationItem setLeftBarButtonItem:leftBarButtonItem animated:YES];
+    
+}
 
 //创建textField
 - (void)createTextField
@@ -295,6 +313,23 @@
     [super didReceiveMemoryWarning];
     NSLog(@"didReceiveMemoryWarning");
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Button Handlers
+-(void)leftDrawerButtonPress:(id)sender{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+-(void)rightDrawerButtonPress:(id)sender{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+}
+
+-(void)doubleTap:(UITapGestureRecognizer*)gesture{
+    [self.mm_drawerController bouncePreviewForDrawerSide:MMDrawerSideLeft completion:nil];
+}
+
+-(void)twoFingerDoubleTap:(UITapGestureRecognizer*)gesture{
+    [self.mm_drawerController bouncePreviewForDrawerSide:MMDrawerSideRight completion:nil];
 }
 
 @end
