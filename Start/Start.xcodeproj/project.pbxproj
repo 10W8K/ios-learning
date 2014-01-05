@@ -22,6 +22,7 @@
 		FA026D0C183C5EB700179A16 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA026D04183C5EB700179A16 /* Default.png */; };
 		FA026D0D183C5EB700179A16 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA026D05183C5EB700179A16 /* Default@2x.png */; };
 		FA026D14183C5F5D00179A16 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D12183C5F5D00179A16 /* UIColor+Hex.m */; };
+		FA083C4518790A3400E90CB9 /* EAIntroView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA083C4418790A3400E90CB9 /* EAIntroView.framework */; };
 		FA3F363E184324970029255F /* MMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F363D184324970029255F /* MMDrawerVisualStateManager.m */; };
 		FA3F3641184328590029255F /* MMCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F3640184328590029255F /* MMCenterTableViewController.m */; };
 		FA3F3644184328C70029255F /* MMCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F3643184328C70029255F /* MMCenterTableViewCell.m */; };
@@ -52,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA083C421879097300E90CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA083C3E1879097300E90CB9 /* EAIntroView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA6E46C11879045800401921;
+			remoteInfo = EAIntroView;
+		};
 		FAFFA4041822A38D009CB36D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAFFA3DC1822A38D009CB36D /* Project object */;
@@ -84,6 +92,8 @@
 		FA026D05183C5EB700179A16 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA026D11183C5F5D00179A16 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		FA026D12183C5F5D00179A16 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		FA083C3E1879097300E90CB9 /* EAIntroView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EAIntroView.xcodeproj; path = ../EAIntroView/EAIntroView/EAIntroView.xcodeproj; sourceTree = "<group>"; };
+		FA083C4418790A3400E90CB9 /* EAIntroView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EAIntroView.framework; path = "../../../Library/Developer/Xcode/DerivedData/ios-dhgwvdcmfrdgkxgjkcjrojvgvnzq/Build/Products/Debug-iphoneos/EAIntroView.framework"; sourceTree = "<group>"; };
 		FA3F363C184324970029255F /* MMDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualStateManager.h; path = MMDrawerView/MMDrawerVisualStateManager.h; sourceTree = "<group>"; };
 		FA3F363D184324970029255F /* MMDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualStateManager.m; path = MMDrawerView/MMDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		FA3F363F184328590029255F /* MMCenterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMCenterTableViewController.h; path = MMDrawerView/MMCenterTableViewController.h; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 			files = (
 				FAFFA3EA1822A38D009CB36D /* CoreGraphics.framework in Frameworks */,
 				FAFFA3EC1822A38D009CB36D /* UIKit.framework in Frameworks */,
+				FA083C4518790A3400E90CB9 /* EAIntroView.framework in Frameworks */,
 				FAFFA3E81822A38D009CB36D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +235,22 @@
 			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
+		FA083C3F1879097300E90CB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA083C431879097300E90CB9 /* EAIntroView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6E46F61879088000401921 /* SubProjects */ = {
+			isa = PBXGroup;
+			children = (
+				FA083C3E1879097300E90CB9 /* EAIntroView.xcodeproj */,
+			);
+			name = SubProjects;
+			sourceTree = "<group>";
+		};
 		FA756C561842375800606320 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +318,7 @@
 				FAFFA4061822A38D009CB36D /* StartTests */,
 				FAFFA3E61822A38D009CB36D /* Frameworks */,
 				FAFFA3E51822A38D009CB36D /* Products */,
+				FA6E46F61879088000401921 /* SubProjects */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,6 +334,7 @@
 		FAFFA3E61822A38D009CB36D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA083C4418790A3400E90CB9 /* EAIntroView.framework */,
 				FAFFA3E71822A38D009CB36D /* Foundation.framework */,
 				FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */,
 				FAFFA3EB1822A38D009CB36D /* UIKit.framework */,
@@ -422,6 +451,12 @@
 			mainGroup = FAFFA3DB1822A38D009CB36D;
 			productRefGroup = FAFFA3E51822A38D009CB36D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA083C3F1879097300E90CB9 /* Products */;
+					ProjectRef = FA083C3E1879097300E90CB9 /* EAIntroView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FAFFA3E31822A38D009CB36D /* Start */,
@@ -429,6 +464,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA083C431879097300E90CB9 /* EAIntroView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EAIntroView.framework;
+			remoteRef = FA083C421879097300E90CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FAFFA3E21822A38D009CB36D /* Resources */ = {
@@ -605,8 +650,14 @@
 		FAFFA4111822A38D009CB36D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/EAIntroView-hdedgauvagwrvmcwrsdvmjhbwlcb/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ios-dhgwvdcmfrdgkxgjkcjrojvgvnzq/Build/Products/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Start/Start-Prefix.pch";
 				INFOPLIST_FILE = "Start/Start-Info.plist";
@@ -618,8 +669,14 @@
 		FAFFA4121822A38D009CB36D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/EAIntroView-hdedgauvagwrvmcwrsdvmjhbwlcb/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ios-dhgwvdcmfrdgkxgjkcjrojvgvnzq/Build/Products/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Start/Start-Prefix.pch";
 				INFOPLIST_FILE = "Start/Start-Info.plist";

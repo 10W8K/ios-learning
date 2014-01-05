@@ -24,6 +24,8 @@
 //#import "MMNavigationController.h"
 
 
+#import <EAIntroView/OpenViewController.h>
+
 
 @interface IndexViewController ()
 
@@ -123,6 +125,10 @@
     
     //隐藏后退按钮
     self.navigationItem.hidesBackButton = YES;
+    
+    
+    OpenViewController *ov = [[OpenViewController alloc]init];
+    [ov testFunction];
 }
 
 - (void)setupLeftMenuButton{
