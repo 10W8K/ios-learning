@@ -28,6 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     UIView *view1 = [[UIView alloc]init];
     //[alertViewButton setFrame:CGRectMake(5.0, 117.0, self.view.frame.size.width-10, 37)];
     //[view1 setFrame:CGRectMake(20.0, 80.0, 130.0, 210)];

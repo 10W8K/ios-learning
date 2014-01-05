@@ -51,7 +51,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.list = [NSArray arrayWithObjects:@"武汉",@"上海",@"北京",@"深圳",@"广州",@"重庆",@"香港",@"台海",@"天津", nil];
+    //self.list = [NSArray arrayWithObjects:@"武汉",@"上海",@"北京",@"深圳",@"广州",@"重庆",@"香港",@"台海",@"天津", nil];
+    
+    self.list = @[@"武汉"
+                  ,@"上海"
+                  ,@"北京"
+                  ,@"深圳"
+                  ,@"广州"
+                  ,@"重庆"
+                  ,@"香港"
+                  ,@"台海"
+                  ,@"天津"];
+    
     //self.dataList = self.list;
     //self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
     //self.tableView = [[UITableView alloc]init];
