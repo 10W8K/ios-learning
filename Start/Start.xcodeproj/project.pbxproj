@@ -27,6 +27,7 @@
 		FA3F3641184328590029255F /* MMCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F3640184328590029255F /* MMCenterTableViewController.m */; };
 		FA3F3644184328C70029255F /* MMCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F3643184328C70029255F /* MMCenterTableViewCell.m */; };
 		FA3F3647184329DB0029255F /* MMRightSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F3646184329DB0029255F /* MMRightSideDrawerViewController.m */; };
+		FA63DF5818793D0600718D0E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63DF5718793D0600718D0E /* JavaScriptCore.framework */; };
 		FA756C591842379A00606320 /* MMLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA756C581842379A00606320 /* MMLogoView.m */; };
 		FA756C5D18423F0900606320 /* MMLeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA756C5C18423F0900606320 /* MMLeftSideDrawerViewController.m */; };
 		FA756C6018423F6D00606320 /* MMSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA756C5F18423F6D00606320 /* MMSideDrawerViewController.m */; };
@@ -117,6 +118,7 @@
 		FA3F3643184328C70029255F /* MMCenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCenterTableViewCell.m; path = MMDrawerView/MMCenterTableViewCell.m; sourceTree = "<group>"; };
 		FA3F3645184329DB0029255F /* MMRightSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMRightSideDrawerViewController.h; path = MMDrawerView/MMRightSideDrawerViewController.h; sourceTree = "<group>"; };
 		FA3F3646184329DB0029255F /* MMRightSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMRightSideDrawerViewController.m; path = MMDrawerView/MMRightSideDrawerViewController.m; sourceTree = "<group>"; };
+		FA63DF5718793D0600718D0E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA756C571842379A00606320 /* MMLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMLogoView.h; path = "Custom Views/MMLogoView.h"; sourceTree = "<group>"; };
 		FA756C581842379A00606320 /* MMLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMLogoView.m; path = "Custom Views/MMLogoView.m"; sourceTree = "<group>"; };
 		FA756C5B18423F0900606320 /* MMLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMLeftSideDrawerViewController.h; path = MMDrawerView/MMLeftSideDrawerViewController.h; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA63DF5818793D0600718D0E /* JavaScriptCore.framework in Frameworks */,
 				FAFFA3EA1822A38D009CB36D /* CoreGraphics.framework in Frameworks */,
 				FAFFA3EC1822A38D009CB36D /* UIKit.framework in Frameworks */,
 				FA083C4518790A3400E90CB9 /* EAIntroView.framework in Frameworks */,
@@ -379,6 +382,7 @@
 		FAFFA3E61822A38D009CB36D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA63DF5718793D0600718D0E /* JavaScriptCore.framework */,
 				FA083C4418790A3400E90CB9 /* EAIntroView.framework */,
 				FAFFA3E71822A38D009CB36D /* Foundation.framework */,
 				FAFFA3E91822A38D009CB36D /* CoreGraphics.framework */,
