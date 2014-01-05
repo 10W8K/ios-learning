@@ -24,7 +24,7 @@
 //#import "MMNavigationController.h"
 
 
-#import <EAIntroView/OpenViewController.h>
+#import <EAIntroView/SMPageControl.h>
 
 
 @interface IndexViewController ()
@@ -127,8 +127,12 @@
     self.navigationItem.hidesBackButton = YES;
     
     
-    OpenViewController *ov = [[OpenViewController alloc]init];
-    [ov testFunction];
+    //OpenViewController *ov = [[OpenViewController alloc]init];
+    //[ov testFunction];
+    
+
+    
+    
 }
 
 - (void)setupLeftMenuButton{

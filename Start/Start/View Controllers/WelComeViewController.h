@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EAIntroView/EAIntroView.h>
 
-@interface WelComeViewController : UIViewController <UIScrollViewDelegate>
+@interface WelComeViewController : UIViewController <UIScrollViewDelegate, EAIntroDelegate>
 
 @property (strong, nonatomic)UIScrollView *scrollView;
 

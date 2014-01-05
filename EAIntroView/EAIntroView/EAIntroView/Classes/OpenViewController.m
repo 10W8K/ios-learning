@@ -6,6 +6,9 @@
 //  Copyright (c) 2014年 想当当. All rights reserved.
 //
 
+//IOS7开发～Xcode5制作framework
+//http://blog.csdn.net/lizhongfu2013/article/details/12648633
+
 #import "OpenViewController.h"
 #import "PrivateViewController.h"
 

@@ -12,6 +12,14 @@
 		FA6E46D0187905E800401921 /* OpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E46CF187905E800401921 /* OpenViewController.m */; };
 		FA6E46D41879062000401921 /* PrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E46D31879062000401921 /* PrivateViewController.m */; };
 		FA6E46D61879076D00401921 /* OpenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6E46CE187905E800401921 /* OpenViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF4645B1879307000C41A9B /* SMPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF464591879307000C41A9B /* SMPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF4645C1879307000C41A9B /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF4645A1879307000C41A9B /* SMPageControl.m */; };
+		FAF4647A1879358700C41A9B /* EAIntroPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF464781879358700C41A9B /* EAIntroPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF4647B1879358700C41A9B /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF464791879358700C41A9B /* EAIntroPage.m */; };
+		FAF4647E187935CB00C41A9B /* EAIntroView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF4647C187935CB00C41A9B /* EAIntroView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF4647F187935CB00C41A9B /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF4647D187935CB00C41A9B /* EAIntroView.m */; };
+		FAF464821879361800C41A9B /* PageSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF464801879361800C41A9B /* PageSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF464831879361800C41A9B /* PageSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF464811879361800C41A9B /* PageSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,14 @@
 		FA6E46CF187905E800401921 /* OpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenViewController.m; path = Classes/OpenViewController.m; sourceTree = "<group>"; };
 		FA6E46D21879062000401921 /* PrivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivateViewController.h; path = Classes/PrivateViewController.h; sourceTree = "<group>"; };
 		FA6E46D31879062000401921 /* PrivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivateViewController.m; path = Classes/PrivateViewController.m; sourceTree = "<group>"; };
+		FAF464591879307000C41A9B /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMPageControl.h; path = Classes/Libs/SMPageControl/SMPageControl.h; sourceTree = "<group>"; };
+		FAF4645A1879307000C41A9B /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMPageControl.m; path = Classes/Libs/SMPageControl/SMPageControl.m; sourceTree = "<group>"; };
+		FAF464781879358700C41A9B /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		FAF464791879358700C41A9B /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		FAF4647C187935CB00C41A9B /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		FAF4647D187935CB00C41A9B /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		FAF464801879361800C41A9B /* PageSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageSubclass.h; path = Classes/PageSubclass.h; sourceTree = "<group>"; };
+		FAF464811879361800C41A9B /* PageSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PageSubclass.m; path = Classes/PageSubclass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,10 @@
 			children = (
 				FA6E46D1187905F700401921 /* Classes */,
 				FA6E46C51879045800401921 /* Supporting Files */,
+				FAF464781879358700C41A9B /* EAIntroPage.h */,
+				FAF464791879358700C41A9B /* EAIntroPage.m */,
+				FAF4647C187935CB00C41A9B /* EAIntroView.h */,
+				FAF4647D187935CB00C41A9B /* EAIntroView.m */,
 			);
 			path = EAIntroView;
 			sourceTree = "<group>";
@@ -91,12 +111,32 @@
 		FA6E46D1187905F700401921 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAF464571879303D00C41A9B /* Libs */,
 				FA6E46CE187905E800401921 /* OpenViewController.h */,
 				FA6E46CF187905E800401921 /* OpenViewController.m */,
 				FA6E46D21879062000401921 /* PrivateViewController.h */,
 				FA6E46D31879062000401921 /* PrivateViewController.m */,
+				FAF464801879361800C41A9B /* PageSubclass.h */,
+				FAF464811879361800C41A9B /* PageSubclass.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		FAF464571879303D00C41A9B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FAF464581879304D00C41A9B /* SMPageControl */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		FAF464581879304D00C41A9B /* SMPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				FAF464591879307000C41A9B /* SMPageControl.h */,
+				FAF4645A1879307000C41A9B /* SMPageControl.m */,
+			);
+			name = SMPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +146,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF4647A1879358700C41A9B /* EAIntroPage.h in Headers */,
+				FAF464821879361800C41A9B /* PageSubclass.h in Headers */,
+				FAF4647E187935CB00C41A9B /* EAIntroView.h in Headers */,
+				FAF4645B1879307000C41A9B /* SMPageControl.h in Headers */,
 				FA6E46D61879076D00401921 /* OpenViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF4645C1879307000C41A9B /* SMPageControl.m in Sources */,
 				FA6E46D41879062000401921 /* PrivateViewController.m in Sources */,
+				FAF464831879361800C41A9B /* PageSubclass.m in Sources */,
 				FA6E46D0187905E800401921 /* OpenViewController.m in Sources */,
+				FAF4647B1879358700C41A9B /* EAIntroPage.m in Sources */,
+				FAF4647F187935CB00C41A9B /* EAIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
